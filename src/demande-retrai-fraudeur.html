@@ -296,25 +296,22 @@
           </span>
         </a>
         <!-- end::Menu link -->
+<!-- start::Menu link -->
+<a x-data="{ linkHover: false }" @mouseover="linkHover = true" @mouseleave="linkHover = false"
+href="./demande-retrai-fraudeur.html"
+class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200">
 
-        <!-- start::Menu link -->
-        <a x-data="{ linkHover: false }" @mouseover="linkHover = true" @mouseleave="linkHover = false"
-          href="./demande-retrai-fraudeur.html"
-          class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+  stroke="currentColor" class="size-5">
+  <path stroke-linecap="round" stroke-linejoin="round"
+    d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m6 4.125 2.25 2.25m0 0 2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+</svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m6 4.125 2.25 2.25m0 0 2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
-          </svg>
-
-          <span class="ml-3 transition duration-200" :class="linkHover ? 'text-gray-100' : ''">
-            Demande retrait fraudeur
-          </span>
-        </a>
-        <!-- end::Menu link -->
-
-
+<span class="ml-3 transition duration-200" :class="linkHover ? 'text-gray-100' : ''">
+  Demande retrait fraudeur
+</span>
+</a>
+<!-- end::Menu link -->
       </nav>
     </aside>
 
@@ -499,159 +496,193 @@
 
       <!-- start:Page content -->
       <div class="h-full bg-gray-200 p-8">
-        <!-- start::Stats -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-gray-600">Brouillon</span>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-gray-600 border border-gray-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">12</span>
 
+        <div class="bg-white  mt-8 mx-auto px-16 py-8 rounded-lg shadow-2xl">
+
+          <div class="mt-6">
+            <p class="mb-2">État d'avancement</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
+              <!-- 1 blue -->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-blue-500/50 hover:border-l-blue-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-blue-500/50 group-hover:text-blue-500 font-bold">1. Déposer la
+                    demande.</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">C'est la première étape pour
+                    résoudre votre situation.</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-yellow-600">En cours</span>
-
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-yellow-600 border border-yellow-600">
+                <svg class="size-10 text-blue-400/50 group-hover:text-blue-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">186</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-red-600">Classer</span>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-red-600 border border-red-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">1378</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-green-600">Valider</span>
-
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-green-600 border border-green-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
                 </svg>
 
               </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">1467</span>
 
+              <!-- 2 yellow -->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-yellow-500/50 hover:border-l-yellow-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-yellow-500/50 group-hover:text-yellow-500 font-bold">2. Traitement de
+                    la demande.</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Vous avez attendu un certain
+                    temps pour étudier la demande.</p>
                 </div>
+
+                <svg class="size-10 text-yellow-400/50 group-hover:text-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                </svg>
+
               </div>
+
+              <!-- 4 gray-->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-gray-500/50 hover:border-l-gray-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-gray-500/50 group-hover:text-gray-500 font-bold">3. Décision finale
+                  </p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Vous avez attendu un certain
+                    temps avant que la décision finale soit prise.</p>
+                </div>
+                <svg class="size-10 text-gray-400/50 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                </svg>
+              </div>
+
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-green-500/50 hover:border-l-green-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-green-500/50 group-hover:text-green-500 font-bold">3. Situation
+                    réglée</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Votre commande a été réglée
+                    avec succès.</p>
+                </div>
+                <svg class="size-10 text-green-400/50 group-hover:text-green-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+              </div>
+
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-red-500/50 hover:border-l-red-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-red-500/50 group-hover:text-red-500 font-bold">3. Situation Non
+                    réglée</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">votre demande a été refusée
+                  </p>
+                </div>
+
+                <svg class="size-10 text-red-400/50 group-hover:text-red-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
+                </svg>
+
+              </div>
+
             </div>
           </div>
         </div>
-        <!-- end::Stats -->
+
         <div class="bg-white  mt-8 mx-auto px-16 py-8 rounded-lg shadow-2xl">
           <!-- start:: Vertical Form Layout -->
           <div>
-            <h4 class="text-xl capitalize">Ajouter Inspection</h4>
+            <h4 class="text-xl capitalize">Demande de retrait</h4>
+            <p>remplissez ce formulaire pour traiter votre situation.</p>
             <div class="mt-6">
               <form>
-                <div class="md:grid md:gap-4 md:grid-cols-2">
-                  <div class="flex flex-col my-4">
-                    <label for="first_name_vertical">N. Registre du commerce <sup
-                        class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="first_name_vertical" id="first_name_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0"
-                      placeholder="Entrez le N. Registre du commerce">
-                  </div>
-                  <div class="flex flex-col my-4">
-                    <label for="last_name_vertical">NIF <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="last_name_vertical" id="last_name_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0"
-                      placeholder="Entrez le Nif">
-                  </div>
-                </div>
-                <div class="md:grid md:gap-4 md:grid-cols-2">
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">Numéro PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez le numéro PV">
-                  </div>
 
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">Date de PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="date" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez la date du PV">
-                  </div>
+                <div class="flex flex-col my-4">
+                  <label for="first_name_vertical">
+                    <span>Texte de la demande <sup class="text-red-600 font-bold">*</sup></span>
+                  </label>
+                  <textarea rows="6"
+                    class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0"
+                    name="" id="">text de demmande.</textarea>
                 </div>
 
-                <div class="md:grid md:gap-4 md:grid-cols-2 content-start">
+                <div class="flex flex-col">
+                  <label class="flex justify-between" for="default_select">
+                    <span>Lieu de dépôt <sup class="text-red-600 font-bold">*</sup></span>
+                    <span dir="rtl">مكان الإيداع</span>
+                  </label>
+                  <select name="default_select" id="default_select"
+                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300">
+                    <option value="0">Administration centrale</option>
+                    <option value="1">Direction de commerce de wilaya</option>
+                  </select>
+                </div>
 
-                  <div class="flex flex-col my-4 self-start">
-                    <label for="address_vertical">Montant <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="number" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1.5 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez le montant">
-                  </div>
 
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
+                <div class="flex flex-col my-4">
+                  <label class="flex justify-between" for="address_vertical">
+                    <span>Certificat d'inspection d'atelier <sup class="text-red-600 font-bold">*</sup></span>
+                    <span dir="rtl">شهادة معاينة المحل</span>
+                  </label>
+                  <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
                     file:rounded file:border-0
                     file:text-sm file:font-base
                     file:bg-secondary file:text-gray-200
-                  hover:file:bg-black" placeholder="Entrez le PV">
-                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Entrez le PV au format
-                      PDF
-                    </p>
-                  </div>
-
+                    hover:file:bg-black" placeholder="Entrez le PV">
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Ajoutez la Certificat
+                    d'inspection d'atelier au format
+                    PDF
+                  </p>
                 </div>
-                <div class="flex justify-end gap-2 mt-6">
-                  <a href="./../index.html"
-                    class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Annuler</a>
 
+                <div class="flex flex-col my-4">
+                  <label class="flex justify-between" for="address_vertical">
+                    <span>Décision judiciaire définitive <sup class="text-red-600 font-bold">*</sup></span>
+                    <span dir="rtl">الحكم القضائي النهائي</span>
+                  </label>
+                  <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
+                    file:rounded file:border-0
+                    file:text-sm file:font-base
+                    file:bg-secondary file:text-gray-200
+                    hover:file:bg-black" placeholder="Entrez le PV">
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Ajoutez la Décision
+                    judiciaire définitive au format
+                    PDF
+                  </p>
+                </div>
+
+                <div class="flex flex-col my-4">
+                  <label class="flex justify-between" for="address_vertical">
+                    <span>Certificat prouvant l'établissement d'un rapport <sup class="text-red-600 font-bold">*</sup></span>
+                    <span dir="rtl">شهادة إثبات تحرير محضر</span>
+                  </label>
+                  <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
+                    file:rounded file:border-0
+                    file:text-sm file:font-base
+                    file:bg-secondary file:text-gray-200
+                    hover:file:bg-black" placeholder="Entrez le PV">
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Ajoutez la Certificat
+                    prouvant l'établissement d'un rapport au format
+                    PDF
+                  </p>
+                </div>
+
+                <div class="flex flex-col my-4">
+                  <label class="flex justify-between" for="address_vertical">
+                    <span>Attestation de dépôt de comptes sociaux <sup class="text-red-600 font-bold">*</sup></span>
+                    <span dir="rtl">شهادة إداع الحسابات الإجتماعية</span>
+                  </label>
+                  <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
+                    file:rounded file:border-0
+                    file:text-sm file:font-base
+                    file:bg-secondary file:text-gray-200
+                    hover:file:bg-black" placeholder="Entrez le PV">
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Ajoutez l'Attestation de dépôt de comptes sociaux au format
+                    PDF
+                  </p>
+                </div>
+
+                <div class="flex justify-end gap-2 mt-6">
                   <button
                     class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Soumettre</button>
                 </div>
@@ -660,6 +691,9 @@
           </div>
           <!-- end:: Vertical Form Layout -->
         </div>
+
+
+
 
       </div>
       <!-- end:Page content -->

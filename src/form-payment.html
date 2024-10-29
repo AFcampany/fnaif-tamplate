@@ -296,7 +296,6 @@
           </span>
         </a>
         <!-- end::Menu link -->
-
         <!-- start::Menu link -->
         <a x-data="{ linkHover: false }" @mouseover="linkHover = true" @mouseleave="linkHover = false"
           href="./demande-retrai-fraudeur.html"
@@ -313,8 +312,6 @@
           </span>
         </a>
         <!-- end::Menu link -->
-
-
       </nav>
     </aside>
 
@@ -499,159 +496,127 @@
 
       <!-- start:Page content -->
       <div class="h-full bg-gray-200 p-8">
-        <!-- start::Stats -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-gray-600">Brouillon</span>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-gray-600 border border-gray-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">12</span>
 
+        <div class="bg-white  mt-8 mx-auto px-16 py-8 rounded-lg shadow-2xl">
+
+          <div class="mt-6">
+            <p class="mb-2">État d'avancement</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
+              <!-- 1 red -->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-red-500/50 hover:border-l-red-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-red-500/50 group-hover:text-red-500 font-bold">1. Payez votre amende
+                  </p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Le montant de l'amende sera
+                    déterminé ultérieurement</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-yellow-600">En cours</span>
 
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-yellow-600 border border-yellow-600">
+                <svg class="size-10 text-red-400/50 group-hover:text-red-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">186</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-red-600">Classer</span>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-red-600 border border-red-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">1378</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-xl text-green-600">Valider</span>
-
-            </div>
-            <div class="flex items-center justify-between mt-6">
-              <div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3  bg-opacity-20 rounded-full text-green-600 border border-green-600">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
                 </svg>
 
               </div>
-              <div class="flex flex-col">
-                <div class="flex items-end">
-                  <span class="text-2xl 2xl:text-4xl font-bold">1467</span>
 
+              <!-- 2 yellow -->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-yellow-500/50 hover:border-l-yellow-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-yellow-500/50 group-hover:text-yellow-500 font-bold">2. Traitement de
+                    la demande.</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Vous avez attendu un certain
+                    temps pour étudier la demande.</p>
                 </div>
+
+                <svg class="size-10 text-yellow-400/50 group-hover:text-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                </svg>
+
               </div>
+
+
+              <!-- 3 gray-->
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-gray-500/50 hover:border-l-gray-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-gray-500/50 group-hover:text-gray-500 font-bold">3. Décision finale
+                  </p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Vous avez attendu un certain
+                    temps avant que la décision finale soit prise.</p>
+                </div>
+                <svg class="size-10 text-gray-400/50 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                </svg>
+              </div>
+
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-green-500/50 hover:border-l-green-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-green-500/50 group-hover:text-green-500 font-bold">3. Situation
+                    réglée</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">Votre commande a été réglée
+                    avec succès.</p>
+                </div>
+                <svg class="size-10 text-green-400/50 group-hover:text-green-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+              </div>
+
+              <div
+                class="group h-24 flex items-center justify-between border border-gray-400/50 hover:border-gray-400 border-l-8 border-l-red-500/50 hover:border-l-red-500 shadow-xl rounded-lg px-4">
+                <div>
+                  <p class="uppercase text-sm text-red-500/50 group-hover:text-red-500 font-bold">3. Situation Non
+                    réglée</p>
+                  <p class="font-base text-gray-800/50 group-hover:text-gray-800 text-sm">votre demande a été refusée
+                  </p>
+                </div>
+
+                <svg class="size-10 text-red-400/50 group-hover:text-red-400" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
+                </svg>
+
+              </div>
+
             </div>
           </div>
         </div>
-        <!-- end::Stats -->
+
         <div class="bg-white  mt-8 mx-auto px-16 py-8 rounded-lg shadow-2xl">
           <!-- start:: Vertical Form Layout -->
           <div>
-            <h4 class="text-xl capitalize">Ajouter Inspection</h4>
+            <h4 class="text-xl capitalize">Vérifier que l'amende a été payée</h4>
+            <p>Ajoutez le reçu de paiement pour finaliser la demande.</p>
             <div class="mt-6">
               <form>
-                <div class="md:grid md:gap-4 md:grid-cols-2">
-                  <div class="flex flex-col my-4">
-                    <label for="first_name_vertical">N. Registre du commerce <sup
-                        class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="first_name_vertical" id="first_name_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0"
-                      placeholder="Entrez le N. Registre du commerce">
-                  </div>
-                  <div class="flex flex-col my-4">
-                    <label for="last_name_vertical">NIF <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="last_name_vertical" id="last_name_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0"
-                      placeholder="Entrez le Nif">
-                  </div>
-                </div>
-                <div class="md:grid md:gap-4 md:grid-cols-2">
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">Numéro PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="text" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez le numéro PV">
-                  </div>
 
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">Date de PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="date" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez la date du PV">
-                  </div>
-                </div>
-
-                <div class="md:grid md:gap-4 md:grid-cols-2 content-start">
-
-                  <div class="flex flex-col my-4 self-start">
-                    <label for="address_vertical">Montant <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="number" name="address_vertical" id="address_vertical"
-                      class="flex-1 py-1.5 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300"
-                      placeholder="Entrez le montant">
-                  </div>
-
-                  <div class="flex flex-col my-4">
-                    <label for="address_vertical">PV <sup class="text-red-600 font-bold">*</sup></label>
-                    <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
-                    file:rounded file:border-0
-                    file:text-sm file:font-base
-                    file:bg-secondary file:text-gray-200
+                <div class="flex flex-col my-4">
+                  <label class="flex justify-between" for="address_vertical">
+                    <span>Reçu de paiement <sup class="text-red-600 font-bold">*</sup></span>
+                    <span>إيصال الدفع</span>
+                  </label>
+                  <input type="file" name="address_vertical" id="address_vertical" class="flex-1 border border-gray-300 cursor-pointer mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300 file:mr-4 file:py-2 file:px-4
+                  file:rounded file:border-0
+                  file:text-sm file:font-base
+                  file:bg-secondary file:text-gray-200
                   hover:file:bg-black" placeholder="Entrez le PV">
-                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Entrez le PV au format
-                      PDF
-                    </p>
-                  </div>
-
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Ajoutez le reçu de
+                    paiement au format
+                    PDF
+                  </p>
                 </div>
-                <div class="flex justify-end gap-2 mt-6">
-                  <a href="./../index.html"
-                    class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Annuler</a>
 
+
+                <div class="flex justify-end gap-2 mt-6">
                   <button
                     class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Soumettre</button>
                 </div>
@@ -660,6 +625,9 @@
           </div>
           <!-- end:: Vertical Form Layout -->
         </div>
+
+
+
 
       </div>
       <!-- end:Page content -->
